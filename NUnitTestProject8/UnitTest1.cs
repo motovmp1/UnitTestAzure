@@ -43,8 +43,6 @@ namespace NUnitTestProject8
         public void Test6()
         {
 
-            System.Console.WriteLine("Test6 step inside");
-            System.Console.WriteLine("Fail");
         }
     }
 }
