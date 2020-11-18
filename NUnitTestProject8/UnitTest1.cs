@@ -18,5 +18,15 @@ namespace NUnitTestProject8
 
             Assert.That(num, Is.EqualTo(1));
         }
+
+        [Test]
+        public void Test2()
+        {
+            int num = 1;
+            System.Console.WriteLine("second step inside");
+
+            Assert.That(num, Is.EqualTo(1));
+            System.Console.WriteLine("Pass");
+        }
     }
 }
