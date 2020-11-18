@@ -35,7 +35,7 @@ namespace NUnitTestProject8
             System.Console.WriteLine("Test3 step inside");
 
             Assert.That(num, Is.EqualTo(1));
-            System.Console.WriteLine("Pass");
+            System.Console.WriteLine("Fail");
         }
     }
 }
