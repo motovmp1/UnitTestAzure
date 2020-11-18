@@ -1,40 +1,49 @@
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 
 namespace NUnitTestProject8
 {
+    [TestClass]
     public class Tests
     {
-        [SetUp]
+        [TestMethod]
         public void Setup()
         {
             System.Console.WriteLine("first step");
         }
 
-        [Test]
+
+        [TestMethod]
         public void Test1()
         {
-            int num = 1;
+           
             System.Console.WriteLine("Test1 step inside");
 
-            Assert.That(num, Is.EqualTo(1));
+           
         }
 
-        [Test]
+        [TestMethod]
         public void Test2()
         {
-            int num = 1;
+            
             System.Console.WriteLine("Test2 step inside");
 
-            Assert.That(num, Is.EqualTo(1));
+           
             System.Console.WriteLine("Pass");
         }
-        [Test]
+        [TestMethod]
         public void Test3()
         {
-            int num = 1;
-            System.Console.WriteLine("Test3 step inside");
 
-            Assert.That(num, Is.EqualTo(1));
+            System.Console.WriteLine("Test3 step inside");
+            System.Console.WriteLine("Fail");
+        }
+
+        [TestMethod]
+        public void Test6()
+        {
+
+            System.Console.WriteLine("Test6 step inside");
             System.Console.WriteLine("Fail");
         }
     }
